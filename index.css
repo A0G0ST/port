@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+html, body
+{
+    height: 100%;
+}
+
+
+/*css för alla sidor*/
+
+
+header{
+    text-align: center;
+    background-image: url(img/Header.jpg);
+    background-position: bottom;
+    color: whitesmoke;
+    font-size: xx-large;
+    text-shadow: 2px 2px 8px black;
+}
+header h1
+{
+    padding-top: 5rem;
+}
+nav{
+    background-color: #0f0f0f;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0; 
+    border-bottom:solid #1d3630;
+}
+nav a{
+    padding: 0.7rem;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-left: 3rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+}
+nav a:nth-last-child(1){
+    margin-left: auto;
+}
+nav a:hover{
+    color: #0d3d31;
+}
+footer{
+    background-color: #0f0f0f;
+    text-align: center;
+    border-top: solid #1d3630;
+}
+footer p{
+    color: whitesmoke;
+    margin-top: 1.5rem;
+}
+
+
+/*css för startsidan, projektsidorna*/
+
+
+.wrapper{
+    min-height: 100vh;
+    display: grid;
+}
+aside{
+    padding: 1rem;
+    background-color: #0f0f0f;
+}
+aside h1
+{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    color: #0d3d31;
+    text-shadow: 2px 2px 10px black;
+}
+.asidenav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.asidenav a
+{
+    text-decoration: none;
+    padding-bottom: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.asidenav a:hover{
+    color: #0d3d31;
+}
+
+
+/*css för startsidan*/
+
+
+main{
+    background-color: #1d3630;
+}
+.flexcontainer
+{
+    display: flex;
+    justify-content: center;
+}
+.boxleft
+{
+    /* width: 20%; */
+    height: 90%;
+    margin-right: 3.5rem;
+    margin-top: 5rem; 
+}
+.boxleft p
+{
+    text-align: center;
+    font-size: xx-large;
+    color: whitesmoke;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    /* border: solid whitesmoke;
+    background-color:#0f0f0f; */
+    margin-bottom: 10rem;
+    /* border-radius: 10%;
+    box-shadow: 5px 5px 5px black; */
+}
+.boxleft img
+{
+    border: solid whitesmoke;
+    border-radius: 50%;
+    margin-bottom: 10rem;
+    box-shadow: 5px 5px 5px black;
+}
+.boxright
+{
+    /* width: 20%; */
+    height: 90%;
+    margin-right: 3.5rem;
+    margin-top: 5rem; 
+
+}
+.boxright p
+{
+    text-align: center;
+    font-size: xx-large;
+    color: whitesmoke;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    /* border: solid whitesmoke;
+    background-color:#0f0f0f; */
+    margin-bottom: 10rem;
+    /* border-radius: 10%;
+    box-shadow: 5px 5px 5px black; */
+}
+.boxright img
+{
+    border: solid whitesmoke;
+    border-radius: 50%;
+    margin-bottom: 10rem;
+    box-shadow: 5px 5px 5px black;
+}
+
+
+/*css för projektsidorna*/
+
+
+.promain{
+    padding: 1rem;
+    background-color: #1d3630;
+    text-align: center
+}
+.probox{
+    background-color: #0f0f0f;
+    border: solid whitesmoke;
+    color: whitesmoke;
+    height: auto;
+    margin: auto;  
+    margin-top: 5rem;  
+    margin-bottom: 5rem;
+    font-size: larger;
+    box-shadow: 5px 5px 5px black; 
+    
+}
+
+.probox h1{
+    margin-top: 2rem;
+    color: #1d3630;
+    text-shadow: 2px 2px 8px black;
+}
+.probox img{
+    border: solid whitesmoke;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 25%;
+    margin-top: 2rem;
+}
+.probox p{
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.proimgflex{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.columnimg{
+    flex: 33%;
+}
+
+
+/*css för info, kontakt*/
+
+
+.wrapper2{
+    min-height: 100vh;
+    display: grid;
+}
+
+.main2{
+    padding: 1rem;
+    background-color: #1d3630;
+    text-align: center;
+
+}
+.main2 h1{
+    color: whitesmoke;
+    font-size: xx-large;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 8px black;
+}
+
+
+/*css för kontakt sidan */
+
+
+.kontaktbox{
+    
+    background-color: #0f0f0f;
+    border: solid whitesmoke;
+    width: 40rem;
+    height: 30rem;
+    margin: auto;  
+    margin-top: 5rem;  
+    margin-bottom: 5rem;
+    font-size: larger;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px black;
+   
+}
+.kontaktbox h1
+{
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+    color: #0d3d31;
+}
+.kontaktbox p{
+    color: whitesmoke;
+    font-size: large;
+    margin-bottom: 2rem;
+}
+
+
+/* css för info sidan*/
+
+
+.infobox{
+    border: solid whitesmoke;
+    background-color:#0f0f0f;
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-top: 5rem;  
+    margin-bottom: 5rem;
+    box-shadow: 5px 5px 5px black;
+}
+.infobox h1{
+    color: #1d3630;
+    padding-top: 3rem;
+    font-size: xx-large;
+    
+}
+.infobox p{
+    color: whitesmoke;
+    font-size: large;
+    margin-bottom: 2rem;
+    text-align: left;
+    margin-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+   
+}
+.infobox img{
+    margin-bottom: 3rem;
+    border: solid whitesmoke;
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 320px){
+    .wrapper{
+        grid-template-columns: 100%;
+        grid-template-rows: 20rem 6.5rem auto auto auto;
+    }
+    .wrapper2{
+        grid-template-columns: 100%;
+        grid-template-rows: 20rem 6.5rem auto auto auto;
+    }
+    header{
+    grid-row: 1/2;
+    }
+    nav{
+        grid-row: 2/3;
+       background-color: #0f0f0f;
+    }
+    aside{
+        grid-row: 3/4;
+    }
+    .asidenav a{
+        float: none;
+        width: 100%;
+    }
+    .boxleft img{
+        width: 100%;
+    }
+    .boxright img{
+        width: 100%;
+    }
+    footer{
+        grid-row: 5/6;
+    }
+    .columnimg img{
+       display: none;
+    }
+    .kontaktbox{
+        width: auto;
+    }
+    .infobox{
+        width: auto;
+    }
+    
+    
+}
+
+
+
+
+
+
+/*tablet*/
+
+@media screen and (min-width: 481px){
+    .wrapper{
+        grid-template-columns: 100%;
+        grid-template-rows: 20rem 3rem auto auto auto;
+    }
+    .wrapper2{
+        grid-template-columns: 100%;
+        grid-template-rows: 20rem 3rem auto  auto ;
+    }
+    header{
+        grid-row: 1/2;
+        
+    }
+    nav{
+        grid-row: 2/3;
+       background-color: #0f0f0f;
+    }
+    .aside{
+        grid-row: 3/4;
+    }
+    .asidenav a{
+        float: none;
+        width: 100%;
+    }
+    .boxleft img{
+        width: 100%;
+    }
+    .boxright img{
+        width: 100%;
+    }
+    footer{
+        grid-row: 5/6;
+    }
+    .columnimg img{
+        display:inline;
+     }
+    
+}
+
+
+
+
+
+/*dataskräm layout*/
+@media screen and (min-width: 769px) {
+    .wrapper{
+        grid-template-columns: 10rem auto;
+        grid-template-rows: 20rem 3rem auto 5rem;
+    }
+    .wrapper2{
+        grid-template-columns: 100%;
+        grid-template-rows: 20rem 3rem auto 5rem;
+    }
+    header{
+        grid-row:1/2;
+        grid-column:1/3;
+        padding-top: 2rem;
+    }
+    nav{
+        grid-row:2/3;
+        grid-column:1/3;
+        background-color: #0f0f0f;
+    }
+    main{
+        grid-row:3/4;
+        grid-column:2/3;
+    }
+    aside{
+        grid-row:3/4;
+        grid-column:1/2;
+    }
+    footer{
+        grid-row: 4/5;
+        grid-column: 1/3;
+        position: sticky;
+    }
+
+    .kontaktbox{
+        width:50%;
+    }
+    .infobox{
+        width: 50%;
+    }
+    
+
+
+}
+
